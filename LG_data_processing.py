@@ -75,11 +75,7 @@ class LgData():
         return train, test
 
 
-    #################################
-    #
-    # get_stateful_cycle
-    #
-    #################################
+
     def get_stateful_cycle(self, cycles, pad_num = 0, steps = 100):
         max_lenght = max(max(len(cycle[0]) for cycle in cycles[0]), max(len(cycle[0]) for cycle in cycles[1]))
         train_x, train_y = self._to_padded_cycle(cycles[0], pad_num, max_lenght)
@@ -114,12 +110,6 @@ class LgData():
             new_cycles = np.concatenate((new_cycles, new_cycle.reshape(1, time_steps//steps, steps, features)))
         return new_cycles
 
-
-    #################################
-    #
-    # get_discharge_multiple_step
-    #
-    #################################
     def get_discharge_multiple_step(self, cycles, steps):
         train_x, train_y = self._split_to_multiple_step(cycles[0], steps)
         test_x, test_y = self._split_to_multiple_step(cycles[1], steps)
