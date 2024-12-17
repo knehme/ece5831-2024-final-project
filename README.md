@@ -1,6 +1,6 @@
 # ece5831-2024-final-project
 
-The following project is a neural network that estimates State of Charge of a battery and incorporates Long Short Term Memory layers to process the drive cycle data. to run script, provide datapath up until:'/LG_HG2_Original_Dataset_McMasterUniversity_Jan_2020/' in the Lg_data_processing class to begin running script when initializing the class. Make sure Tensorflow, Matplotlib, and numpy are libraries are installed 
+The following project is a neural network that estimates State of Charge of a battery and incorporates Long Short Term Memory layers to process the drive cycle data. to run script, provide datapath up until:'/LG_HG2_Original_Dataset_McMasterUniversity_Jan_2020/' in the Lg_data_processing class to begin running script when initializing the class. Make sure Tensorflow, Matplotlib, and numpy libraries are installed 
 
 Presentation video link:
 
